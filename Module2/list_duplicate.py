@@ -6,6 +6,6 @@ for var in number_list:
     if var not in bucket:
         bucket.append(var)
     else:
-        bucket1.append(var)
+        if var not in bucket1: # check for duplicate and append 
+            bucket1.append(var)
 print(bucket1)
-print(set(bucket1))
